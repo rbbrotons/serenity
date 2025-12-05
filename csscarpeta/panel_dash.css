@@ -1,0 +1,263 @@
+:root{
+    --shadow-border: rgba(0,0,0,0.1);
+}
+body, html{
+    margin: 0;   
+    background-color: #7156a2;
+    width: 100%;
+    padding:0 ;
+    font-family: "Oswald", sans-serif;
+   
+}
+.sidebar{
+    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #f0eef7;
+    box-shadow: 1px 0px 10px var(--shadow-border) ;
+    top: 0;
+
+}
+.brand{
+    
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    gap: 0.7rem;
+    margin-left: 70px;
+    margin-bottom: 1.8rem;
+    overflow: hidden;
+}
+.brand img{
+    width: 1.8rem;
+
+}
+.brand span{
+    
+    
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:#7c71b2;
+    margin-left: 20px;
+    display: flex;
+    margin-top: -35px;
+    margin-left: 50px;
+   
+}
+
+.menu-container{
+    
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: -20px;
+}
+
+.menu-container .menu-item{
+    
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+.menu-link{
+  
+    display: flex;
+    padding: 0.55rem 0;
+    color: #7c71b2;
+    text-decoration: none;
+    border-radius: 0.3rem;
+
+}
+.menu-item:hover .menu-link  {
+    color: #c8bbdc;
+    background-color: #7c71b2;  
+}
+.menu-link i{
+   
+    font-size: 1.35rem;
+    padding: 0 0.8rem;
+    color: #7c71b2;
+}
+
+.menu-item:hover .menu-link i {
+    color: #c8bbdc;
+}
+.menu-link,
+.menu-link i,
+.menu-link span {
+    transition: all 0.3s ease;
+}
+.menu-item:hover .menu-link i {
+    transform: translateX(3px);
+}
+
+.menu-link span{
+    
+    font-size: 1.05rem;
+}
+.container-usuario{
+    
+    width: 90%;
+    display: flex;
+    margin-top: 1rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+.img-usr i{
+    color: #7c71b2;
+    display: flex;
+    margin: 0 0.7rem 0 0.35rem;
+    font-size: 1.45rem;
+}
+.img-usr{
+    margin-left: 15px;
+}
+.data-user{
+    color:#7c71b2;
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 3.2rem;
+
+}
+.container-usuario button{
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+    font-size:1.1rem ;
+    border: 2px solid #7c71b2;
+    color: #7c71b2;
+    border-radius: 4px;
+    cursor: pointer;    
+    gap: 6px;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+
+}
+.container-cerrar button:hover{
+    color: #c8bbdc;
+    background-color: #7c71b2;
+}
+
+
+table{
+    
+    width: 100%;
+    background-color: #f0eef7;
+    border-collapse: collapse;
+}
+
+
+table thead tr{
+    background-color: #c8bbdc;
+    font-weight: bold;
+}
+
+table td:not(:last-child), table th:not(:last-child){
+    padding: 8px;
+    border-right: 1px solid black;
+
+   
+}
+
+
+
+.conteiner-tab{
+    border: 2px solid white;
+    max-height: 700px; /* Cambiá este valor según lo que necesites */
+    
+    margin-left: 600px;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+h3{
+    color:#7156a2;
+    margin-left: 20px;
+}
+
+
+h4{
+    
+    width: 150px;
+    text-align: right;
+}
+
+
+
+
+
+ h2{
+    position: relative;
+    margin-left: 800px  ;
+    color: white;
+
+ }
+ tbody tr:nth-child(even) {
+    background-color: #c8bbdc; 
+}
+
+/* Fila impar: color más oscuro */
+tbody tr:nth-child(odd) {
+    background-color: #e1d8eb;; 
+}
+
+.exportar{
+    position: relative;
+    height: 40px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    color: #7156a2;
+    background-color: #f0eef7;
+    border-radius: 4px;
+    border: none;
+    left: 450px;
+    top:-10px ;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.exportar:hover{
+    color: grey;
+    transform: scale(1.05);
+    
+}
+
+ canvas {
+    background-color: white; /* fondo blanco */
+    border-radius: 8px;      /* opcional, bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* sombra ligera */
+    width: 200px;
+    height: 200px;
+}
+/* Contenedor general de los gráficos */
+.charts-grid {
+    margin-left: 400px;
+    display: flex;           /* Activamos flexbox */
+    flex-wrap: wrap;         /* Permite que los elementos pasen a la siguiente fila */
+    justify-content: center; /* Centra los gráficos horizontalmente */
+    gap: 20px;  
+    width: 1200px;             /* Espacio entre gráficos */
+}
+
+/* Cada gráfico ocupa aproximadamente la mitad del contenedor */
+.chart-container {
+ 
+    background-color:#c8bbdc;  /* Fondo blanco */
+    padding: 15px;           /* Espaciado interno */
+    border-radius: 8px;      /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
+    margin-bottom: 20px;     /* Separación inferior */
+}
+
